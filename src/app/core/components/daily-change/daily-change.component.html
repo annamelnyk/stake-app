@@ -1,0 +1,10 @@
+<div
+  class="daily"
+  [class]="{
+    up: dailyChangeAmount() > 0,
+    down: dailyChangeAmount() < 0,
+    neutral: dailyChangeAmount() === 0
+  }"
+>
+  {{ dailyChangeAmount() | formatDailyChange }}
+</div>

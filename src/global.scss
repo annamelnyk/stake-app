@@ -1,0 +1,94 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+@import "./styles/common";
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+html {
+  font-size: 10px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+ion-title {
+  @include text-bold-lg;
+  color: var(--ion-color-primary-03a);
+  text-align: left;
+  padding: 0 15px;
+}
+
+ion-col {
+  @include flex-align-center;
+}
+
+ion-content,
+ion-item,
+ion-list,
+ion-list.list-ios,
+ion-list.list-md {
+  --background: var(--ion-color-primary-04a);
+  background: var(--ion-color-primary-04a);
+}
+
+ion-item {
+  --border-width: 0 !important;
+  --inner-border-width: 0 !important;
+}
+
+.buy-modal {
+  --background: var(--ion-color-primary-04a);
+  --border-radius: 20px 20px 40px 40px;
+  --max-width: 374px;
+  --max-height: 394px;
+}
+
+ion-toast.success {
+  --background: var(--ion-color-primary-01a);
+  //--background: rgba(var(--ion-color-primary-01a-rgb), .3)
+  --color: var(--ion-color-primary-04a);
+  @include text-normal-sm-01a;
+  text-align: center;
+  --border-width: 1px;
+  --border-color: var(--ion-color-primary-03a);
+  --border-radius: 6px;
+  --z-index: 5;
+}

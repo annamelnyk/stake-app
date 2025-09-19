@@ -1,0 +1,15 @@
+<ion-grid [fixed]="true">
+  <ion-row class="col__row">
+    <ion-col class="col__name text-left" size="6">Stock</ion-col>
+    <ion-col class="col__name text-right" size="3">Price</ion-col>
+    <ion-col class="col__name text-right" size="3">Change</ion-col>
+  </ion-row>
+  @for(stock of holdings(); let i = $index; track stock.id) {
+  <app-holding-item
+    [holding]="stock"
+    [animate.enter]="'slide-in'"
+    [animate.leave]="'slide-out'"
+    [style.--enter-delay]="i * 70 + 'ms'"
+  ></app-holding-item>
+  }
+</ion-grid>

@@ -1,0 +1,23 @@
+@import "../../../../styles/common";
+
+.daily {
+  width: 8rem;
+  height: 2.6rem;
+  border-radius: 0.4rem;
+  padding: 0 0.9rem;
+  color: var(--ion-color-primary-04a);
+  @include text-bolder-sm;
+  @include flex-center;
+
+  &.up {
+    background: var(--ion-color-primary-01a);
+  }
+
+  &.down {
+    background: var(--ion-color-primary-01b-shade);
+  }
+
+  &.neutral {
+    background: var(--ion-color-primary-05a);
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/common";
+
+ion-toolbar {
+  --background: var(--ion-color-primary-04a);
+  --border: var(--ion-color-primary-02a);
+}
+
+.holdings__empty {
+  margin: 16px 0 16px 5px;
+  color: var(--ion-color-primary-03a);
+  @include text-bold-md-01a();
+}
+
+.holdings__list__column {
+  justify-content: center;
+}

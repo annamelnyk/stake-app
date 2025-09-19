@@ -1,0 +1,120 @@
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂core
+ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┣ 📂buy-stock
+ ┃ ┃ ┃ ┃ ┣ 📜buy-stock.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜buy-stock.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜buy-stock.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜buy-stock.component.ts
+ ┃ ┃ ┃ ┣ 📂daily-change
+ ┃ ┃ ┃ ┃ ┣ 📜daily-change.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜daily-change.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜daily-change.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜daily-change.component.ts
+ ┃ ┃ ┃ ┣ 📂holding-card
+ ┃ ┃ ┃ ┃ ┣ 📜holding-card.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜holding-card.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜holding-card.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜holding-card.component.ts
+ ┃ ┃ ┃ ┣ 📂holding-item
+ ┃ ┃ ┃ ┃ ┣ 📜holding-item.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜holding-item.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜holding-item.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜holding-item.component.ts
+ ┃ ┃ ┃ ┣ 📂holdings-card-list
+ ┃ ┃ ┃ ┃ ┣ 📜holdings-card-list.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜holdings-card-list.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜holdings-card-list.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜holdings-card-list.component.ts
+ ┃ ┃ ┃ ┣ 📂holdings-list
+ ┃ ┃ ┃ ┃ ┣ 📜holdings-list.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜holdings-list.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜holdings-list.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜holdings-list.component.ts
+ ┃ ┃ ┃ ┣ 📂loader
+ ┃ ┃ ┃ ┃ ┣ 📜loader.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜loader.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜loader.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜loader.component.ts
+ ┃ ┃ ┃ ┣ 📂stock-type-label
+ ┃ ┃ ┃ ┃ ┣ 📜stock-type-label.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜stock-type-label.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜stock-type-label.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜stock-type-label.component.ts
+ ┃ ┃ ┃ ┗ 📂subheader
+ ┃ ┃ ┃ ┃ ┣ 📜subheader.component.html
+ ┃ ┃ ┃ ┃ ┣ 📜subheader.component.scss
+ ┃ ┃ ┃ ┃ ┣ 📜subheader.component.spec.ts
+ ┃ ┃ ┃ ┃ ┗ 📜subheader.component.ts
+ ┃ ┃ ┣ 📂model
+ ┃ ┃ ┃ ┗ 📜stock.model.ts
+ ┃ ┃ ┣ 📂pipes
+ ┃ ┃ ┃ ┣ 📜format-big-numbers-pipe.ts
+ ┃ ┃ ┃ ┗ 📜format-daily-change-pipe.ts
+ ┃ ┃ ┗ 📂services
+ ┃ ┃ ┃ ┣ 📜backend.service.ts
+ ┃ ┃ ┃ ┣ 📜stock.service.ts
+ ┃ ┃ ┃ ┣ 📜storage.service.ts
+ ┃ ┃ ┃ ┗ 📜user-investments.service.ts
+ ┃ ┣ 📂features
+ ┃ ┃ ┣ 📂discover
+ ┃ ┃ ┃ ┣ 📜tab2.page.html
+ ┃ ┃ ┃ ┣ 📜tab2.page.scss
+ ┃ ┃ ┃ ┣ 📜tab2.page.spec.ts
+ ┃ ┃ ┃ ┗ 📜tab2.page.ts
+ ┃ ┃ ┣ 📂invest
+ ┃ ┃ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┃ ┗ 📂equity
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜equity.component.html
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜equity.component.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜equity.component.spec.ts
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜equity.component.ts
+ ┃ ┃ ┃ ┣ 📜tab1.page.html
+ ┃ ┃ ┃ ┣ 📜tab1.page.scss
+ ┃ ┃ ┃ ┣ 📜tab1.page.spec.ts
+ ┃ ┃ ┃ ┗ 📜tab1.page.ts
+ ┃ ┃ ┗ 📂tabs
+ ┃ ┃ ┃ ┣ 📜tabs.page.html
+ ┃ ┃ ┃ ┣ 📜tabs.page.scss
+ ┃ ┃ ┃ ┣ 📜tabs.page.spec.ts
+ ┃ ┃ ┃ ┣ 📜tabs.page.ts
+ ┃ ┃ ┃ ┗ 📜tabs.routes.ts
+ ┃ ┣ 📂shared
+ ┃ ┣ 📜app.component.html
+ ┃ ┣ 📜app.component.scss
+ ┃ ┣ 📜app.component.spec.ts
+ ┃ ┣ 📜app.component.ts
+ ┃ ┗ 📜app.routes.ts
+ ┣ 📂assets
+ ┃ ┣ 📂icon
+ ┃ ┃ ┣ 📜buy-chevrons.svg
+ ┃ ┃ ┣ 📜circle-dollar.svg
+ ┃ ┃ ┣ 📜favicon.png
+ ┃ ┃ ┣ 📜portfolio.svg
+ ┃ ┃ ┣ 📜search.svg
+ ┃ ┃ ┣ 📜square-dollar.svg
+ ┃ ┃ ┗ 📜target.svg
+ ┃ ┣ 📂mock-data
+ ┃ ┃ ┣ 📜details.json
+ ┃ ┃ ┗ 📜pricing.json
+ ┃ ┣ 📜.DS_Store
+ ┃ ┗ 📜shapes.svg
+ ┣ 📂environments
+ ┃ ┣ 📜environment.prod.ts
+ ┃ ┗ 📜environment.ts
+ ┣ 📂styles
+ ┃ ┣ 📜_animations.scss
+ ┃ ┣ 📜_common.scss
+ ┃ ┣ 📜_media.scss
+ ┃ ┣ 📜_mixins.scss
+ ┃ ┗ 📜_typography.scss
+ ┣ 📂theme
+ ┃ ┗ 📜variables.scss
+ ┣ 📜.DS_Store
+ ┣ 📜global.scss
+ ┣ 📜index.html
+ ┣ 📜main.ts
+ ┣ 📜polyfills.ts
+ ┣ 📜test.ts
+ ┗ 📜zone-flags.ts

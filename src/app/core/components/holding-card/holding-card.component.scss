@@ -1,0 +1,68 @@
+@import "../../../../styles/common";
+
+.stock {
+  border: 1px solid var(--ion-color-secondary-02a);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 16px;
+  min-width: 126px;
+  width: 100%;
+
+  @include md {
+    width: 240px;
+  }
+
+  @include lg {
+    width: 342px;
+  }
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__row {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin: 16px 0;
+  }
+
+  &__footer {
+    border-top: 1px solid var(--ion-color-secondary-02a);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+  }
+
+  &__logo {
+    width: 32px;
+    height: auto;
+  }
+
+  &__name {
+    color: var(--ion-color-primary-05b);
+    @include text-normal-md;
+    margin: 5px 0;
+  }
+
+  &__price {
+    color: var(--ion-color-primary-03a);
+    @include text-bold-md-01a;
+  }
+
+  &__info {
+    color: var(--ion-color-primary-05a);
+    @include text-normal-md;
+  }
+}

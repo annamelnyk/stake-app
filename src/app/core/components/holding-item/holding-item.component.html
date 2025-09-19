@@ -1,0 +1,40 @@
+@if (showDailyChange()) {
+<ng-container [ngTemplateOutlet]="stockHoldingWithDailyChange"></ng-container>
+} @else {
+<ng-container [ngTemplateOutlet]="stockHolding"></ng-container>
+}
+
+<ng-template #stockHolding>
+  <ion-row class="stock__row">
+    <ion-col class="stock__info text-left" size="9">
+      <div>
+        <h4 class="stock__name">{{ holding().symbol }}</h4>
+        <div class="stock__shares">{{ holding().fullName }}</div>
+      </div>
+    </ion-col>
+    <ion-col class="stock__price text-right" size="3">{{
+      holding().price | currency : "AUD"
+    }}</ion-col>
+  </ion-row>
+</ng-template>
+
+<ng-template #stockHoldingWithDailyChange>
+  <ion-row class="stock__row">
+    <ion-col class="stock__info text-left" size="6">
+      <div>
+        <h4 class="stock__name">{{ holding().symbol }}</h4>
+        <div class="stock__shares">
+          {{ holding().shares | formatBigNumbers }} shares
+        </div>
+      </div>
+    </ion-col>
+    <ion-col class="stock__price text-right" size="3">{{
+      holding().price | currency : "AUD"
+    }}</ion-col>
+    <ion-col class="text-right" size="3">
+      <app-daily-change
+        [dailyChangeAmount]="holding().dailyChangeAmountPercent ?? 0"
+      />
+    </ion-col>
+  </ion-row>
+</ng-template>

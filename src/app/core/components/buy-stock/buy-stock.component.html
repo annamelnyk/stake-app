@@ -1,0 +1,50 @@
+<div class="buy__outer">
+  <h2 class="buy__header">
+    {{ this.stock.symbol }} {{ this.stock.price | currency : "AUD" }}
+  </h2>
+
+  <form [formGroup]="buyStockForm">
+    <ion-input
+      fill="outline"
+      formControlName="price"
+      readonly
+      class="buy__input price"
+      type="text"
+      label="Price"
+      labelPlacement="stacked"
+    >
+    </ion-input>
+
+    <ion-input
+      fill="outline"
+      formControlName="amount"
+      class="buy__input"
+      type="number"
+      label="Amount"
+      labelPlacement="stacked"
+    ></ion-input>
+
+    <ion-input
+      fill="outline"
+      formControlName="shares"
+      class="buy__input"
+      type="number"
+      label="Shares"
+      labelPlacement="stacked"
+    ></ion-input>
+  </form>
+
+  <div class="buy__button" [class.disabled]="!swipeEnabled">
+    <div class="swipe__track" #swipeTrack>
+      <img
+        draggable="false"
+        [style.transform]="iconTransform"
+        class="swipe__arrow"
+        alt="arrow-icon"
+        src="../../../../assets/icon/buy-chevrons.svg"
+      />
+
+      Swipe to buy
+    </div>
+  </div>
+</div>

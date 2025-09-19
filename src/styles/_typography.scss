@@ -1,0 +1,60 @@
+$font-primary: "Noto Sans", sans-serif;
+
+$font-normal: 500;
+$font-bolder: 700;
+$font-bold: 800;
+
+@mixin text-normal-xs {
+  font-size: 1rem;
+  font-weight: $font-normal;
+}
+
+@mixin text-normal-sm-01a {
+  font-size: 1.2rem;
+  font-weight: $font-normal;
+}
+
+@mixin text-normal-sm-01b {
+  font-size: 1.3rem;
+  font-weight: $font-normal;
+}
+
+@mixin text-normal-md {
+  font-size: 1.4rem;
+  font-weight: $font-normal;
+}
+
+@mixin text-bolder-xs {
+  font-size: 1rem;
+  font-weight: $font-bolder;
+}
+
+@mixin text-bolder-sm {
+  font-size: 1.3rem;
+  font-weight: $font-bolder;
+}
+
+@mixin text-bold-xl {
+  font-weight: $font-bold;
+  font-size: 2.8rem;
+}
+
+@mixin text-bold-lg {
+  font-weight: $font-bold;
+  font-size: 2.2rem;
+}
+
+@mixin text-bold-md-01a {
+  font-weight: $font-bold;
+  font-size: 1.8rem;
+}
+
+@mixin text-bold-md-01b {
+  font-weight: $font-bold;
+  font-size: 1.6rem;
+}
+
+@mixin text-bold-sm {
+  font-weight: $font-bold;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,17 @@
+@import "../../../../styles/common";
+
+.stock__name {
+  color: var(--ion-color-primary-03a);
+  @include text-normal-md;
+  margin: 0;
+}
+
+.stock__shares {
+  color: var(--ion-color-primary-05c);
+  @include text-normal-sm-01a;
+}
+
+.stock__price {
+  color: var(--ion-color-primary-03a);
+  @include text-normal-sm-01b;
+}

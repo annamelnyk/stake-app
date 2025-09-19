@@ -1,0 +1,15 @@
+@import "../../../styles/common";
+
+ion-tab-bar {
+  --background: var(--ion-color-primary-04a);
+  --border: 1px solid var(--ion-color-primary-02a);
+  --color: var(--ion-color-primary-05c);
+}
+
+ion-label {
+  @include text-bolder-xs;
+}
+
+ion-tab-button {
+  --color-selected: var(--ion-color-primary-03a);
+}

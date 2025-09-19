@@ -1,0 +1,15 @@
+@import "../../../../styles/common";
+
+.list {
+  display: flex;
+  gap: 1.6rem;
+  padding: 0 5px;
+  flex-direction: column;
+  justify-content: center;
+
+  @include md {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

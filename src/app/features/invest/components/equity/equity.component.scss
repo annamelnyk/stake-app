@@ -1,0 +1,15 @@
+@import "../../../../../styles/common";
+
+.equity {
+  &__label {
+    @include text-bold-sm;
+    color: var(--ion-color-primary-03a);
+    margin-bottom: 5px;
+  }
+
+  &__total {
+    @include text-bold-xl;
+    color: var(--ion-color-primary-03a);
+    line-height: normal;
+  }
+}

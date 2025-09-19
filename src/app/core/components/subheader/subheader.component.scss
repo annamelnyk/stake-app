@@ -1,0 +1,7 @@
+@import "../../../../styles/common";
+
+.title {
+  @include text-bold-md-01a;
+  color: var(--ion-color-primary-03a);
+  margin-bottom: 15px;
+}

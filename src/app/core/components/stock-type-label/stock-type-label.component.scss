@@ -1,0 +1,21 @@
+@import "../../../../styles/common";
+
+.stock-type {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 16px;
+  padding: 0 6px;
+  line-height: 1.5;
+  @include text-bold-sm;
+
+  &.stock {
+    color: var(--ion-color-primary-03a);
+    border-color: var(--ion-color-primary-03a);
+  }
+
+  &.etf,
+  &.otc {
+    color: var(--ion-color-secondary-01a);
+    border-color: var(--ion-color-secondary-01a);
+  }
+}

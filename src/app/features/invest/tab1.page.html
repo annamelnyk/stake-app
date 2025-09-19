@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Dashboard </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid [fixed]="true">
+    <app-equity />
+
+    <app-subheader title="Holdings" />
+    @if(userInvestments$ | async; as userInvestments){
+    @if(userInvestments.length) {
+    <app-holdings-list [holdings]="userInvestments" />
+    } @else {
+    <p class="holdings__empty">You don't have any holdings yet</p>
+    } }
+
+    <app-subheader title="Trending stocks" />
+    @if (loading) {
+    <app-loader />
+    } @if(stocks$ | async; as stocks){
+    <ion-row>
+      <ion-col class="holdings__list__column">
+        <app-holdings-card-list [holdings]="stocks" />
+      </ion-col>
+    </ion-row>
+    }
+  </ion-grid>
+</ion-content>

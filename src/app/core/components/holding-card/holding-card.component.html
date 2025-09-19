@@ -1,0 +1,21 @@
+<ion-item class="stock" (click)="openBuyStockModal()">
+  <div class="stock__outer">
+    <div class="stock__header stock__row">
+      <img class="stock__logo" [src]="holding().logo" alt="logo" />
+      <app-stock-type-label [stockType]="holding().type" />
+    </div>
+    <div class="stock__content stock__row">
+      <div class="stock__price">{{ holding().price | currency : "AUD" }}</div>
+      <h4 class="stock__name">
+        {{ holding().symbol }} <span>&#183;</span> {{ holding().fullName }}
+      </h4>
+    </div>
+    <div class="stock__footer stock__row">
+      <div class="stock__info">{{ holding().shares | currency : "AUD" }}</div>
+      <div class="stock__info">
+        {{ holding().dailyTurnOver }} <span>&#183;</span>
+      </div>
+      <div class="stock__info">$30-32</div>
+    </div>
+  </div>
+</ion-item>

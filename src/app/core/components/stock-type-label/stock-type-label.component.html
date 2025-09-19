@@ -1,0 +1,7 @@
+<div [class]="stockType()" class="stock-type">
+  @if (stockType() === StockTypeEnum.Stock) {
+  {{ stockType() | titlecase }}
+  } @else {
+  {{ stockType() | uppercase }}
+  }
+</div>
